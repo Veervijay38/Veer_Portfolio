@@ -1,0 +1,29 @@
+/* --------- */
+/* Nav Bar */
+/* --------- */
+@font-face {
+  font-family: Augestina;
+  src: url("../fonts/Agustina.otf");
+}
+.NavTitle {
+  font-family: Augestina;
+  font-size: 1.8em !important;
+  text-transform: capitalize;
+}
+.NavCollapse {
+  justify-content: flex-end;
+}
+
+.sticky {
+  background-color: rgb(4, 0, 32) !important;
+  transition: all 0.3s ease-out 0s !important;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  backdrop-filter: blur(15px) !important;
+}
+
+.navbar {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.3rem 2rem !important;
+  font-size: 1.3rem !important;
+}

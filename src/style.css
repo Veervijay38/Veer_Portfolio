@@ -1,0 +1,168 @@
+/* --------- */
+/* Home Page */
+/* --------- */
+
+.home-section {
+  display: flex;
+  margin-top: 8rem;
+  margin-bottom: 1.1rem;
+  justify-content: center;
+}
+.home-row {
+  justify-content: center;
+}
+.home-header {
+  margin-top: 5rem !important;
+}
+
+.heading {
+  color: aliceblue;
+  font-size: 2rem !important;
+  font-family: "Gill Sans bold";
+}
+.heading-name {
+  color: aliceblue;
+  font-size: 2rem !important;
+  font-family: "Gill Sans bold";
+}
+
+.main-name {
+  font-family: "Gill Sans Extrabold";
+  color: aliceblue;
+  font-size: 2rem !important;
+}
+.Typewriter__wrapper {
+  font-family: "Gill Sans";
+  font-size: 1.5rem !important;
+  color: rgb(64, 123, 255) !important;
+}
+
+.Typewriter__cursor {
+  font-size: 1.5rem !important;
+  color: rgb(64, 123, 255) !important;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+.lottie-style {
+  margin-left: 8rem;
+  /* margin-top: 6rem; */
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px !important;
+  padding-top: 70px !important;
+  /* background-color: aliceblue; */
+}
+.h1 {
+  font-size: 1.5rem;
+  font-family: "Gill Sans bold";
+  color: aliceblue;
+  text-align: center;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+}
+.subh1 {
+  font-size: 1.2rem;
+  font-family: "Gill Sans bold";
+  color: aliceblue;
+  text-align: center;
+}
+.details-section {
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.icon-overlay {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+}
+
+.icon-size {
+  margin: auto;
+}
+.details-section2 {
+  padding-top: 10rem;
+  justify-content: center;
+}
+
+/* --------- */
+/* Footer */
+/* --------- */
+.footer {
+  background-color: rgb(10, 4, 22);
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important ;
+}
+.footer-copywright {
+  text-align: center !important;
+}
+
+.footer-body {
+  z-index: 1;
+  text-align: center !important;
+}
+
+@media (max-width: 767px) {
+  .footer-copywright {
+    text-align: center !important;
+  }
+
+  .footer-body {
+    text-align: center !important;
+  }
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: white !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+.footer-icons {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
+}
+
+.blockquote-footer {
+  color: #a588c0 !important;
+}
