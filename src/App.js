@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router";
 import Home from "./Pages/Home/Home";
-import About from "./Pages/About";
+import About from "./Pages/About/About";
 import Project from "./Pages/Project";
 import Resume from "./Pages/Resume";
 // import LottieControl from "./Components/lottie/TestLottie";

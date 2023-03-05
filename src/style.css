@@ -33,13 +33,13 @@
 }
 .Typewriter__wrapper {
   font-family: "Gill Sans";
-  font-size: 1.5rem !important;
-  color: rgb(64, 123, 255) !important;
+  font-size: 1.8rem !important;
+  color: rgb(51, 213, 245) !important;
 }
 
 .Typewriter__cursor {
-  font-size: 1.5rem !important;
-  color: rgb(64, 123, 255) !important;
+  font-size: 1.8rem !important;
+  color: rgb(51, 213, 245) !important;
 }
 
 .wave {
@@ -79,12 +79,54 @@
     transform: rotate(0deg);
   }
 }
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}
 
+.myAvtar {
+  justify-content: center !important;
+  padding-top: 9em !important;
+  align-self: center;
+}
+
+@media (max-width: 767px) {
+  .myAvtar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+}
+.img-fluid {
+  margin-left: 10%;
+}
+
+.blue {
+  color: rgb(2, 0, 36);
+  font-weight: bold;
+  text-decoration: underline;
+  
+}
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
-  /* background-color: aliceblue; */
+  padding-top: 10rem !important;
+  padding-left: 5rem !important;
+}
+.home-about-description {
+  color: white !important;
+  padding-top: 80px !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+}
+.home-about-body {
+  font-size: 1.2em !important;
+  color: aliceblue;
+  text-align: left;
+  padding-top: 50px;
+  width: 50rem;
 }
 .h1 {
   font-size: 1.5rem;
@@ -122,15 +164,38 @@
   padding-top: 10rem;
   justify-content: center;
 }
+/* --------- */
+/*Scrollbar   */
+/* --------- */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(2, 0, 36, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b66c2;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1d9bf0;
+  border-radius: 12px;
+}
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
+  background-color: rgb(2, 0, 36);
+  bottom: 0;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 10px !important ;
 }
 .footer-copywright {
   text-align: center !important;

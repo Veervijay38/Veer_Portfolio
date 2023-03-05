@@ -4,11 +4,14 @@ import LottieControl from "../../Components/lottie/TestLottie";
 import codinglottie from "../../Components/lottie/programming.json";
 import Home2 from "./Home2";
 import TypeWritercomponet from "../../Components/TypeWriter";
+import Particle from "../../Components/Particle";
+import Social from "../../Components/Social";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
+        <Particle />
         <Row className="home-row">
           <Col md={4} className="home-header">
             <h1 className="heading">
@@ -23,6 +26,7 @@ function Home() {
             <div>
               <TypeWritercomponet />
             </div>
+            <Social />
           </Col>
           <Col md={4} className="lottie-style">
             <LottieControl animationData={codinglottie} />

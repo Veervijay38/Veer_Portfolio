@@ -1,161 +1,50 @@
-import React, { Fragment } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  OverlayTrigger,
-  Tooltip,
-} from "react-bootstrap";
-import { Fade } from "react-reveal";
-import LottieControl from "../../Components/lottie/TestLottie";
-import codinglottie from "../../Components/lottie/programming-computer.json";
-import codinglottie1 from "../../Components/lottie/cloudinfra.json";
-
-import { Icon } from "@iconify/react";
-const softwareSkills = [
-  {
-    skillName: "React Native",
-    fontAwesomeClassname: "tabler:brand-react-native",
-  },
-  {
-    skillName: "HTML-5",
-    fontAwesomeClassname: "vscode-icons:file-type-html",
-  },
-  {
-    skillName: "CSS-3",
-    fontAwesomeClassname: "vscode-icons:file-type-css",
-  },
-  {
-    skillName: "JavaScript",
-    fontAwesomeClassname: "logos:javascript",
-  },
-  {
-    skillName: "TypeScript",
-    fontAwesomeClassname: "logos:typescript-icon",
-  },
-  {
-    skillName: "Reactjs",
-    fontAwesomeClassname: "vscode-icons:file-type-reactjs",
-  },
-  {
-    skillName: "Nodejs",
-    fontAwesomeClassname: "logos:nodejs",
-  },
-  {
-    skillName: "Redux",
-    fontAwesomeClassname: "logos:redux",
-  },
-  {
-    skillName: "NPM",
-    fontAwesomeClassname: "logos:npm-icon",
-  },
-  {
-    skillName: "Yarn",
-    fontAwesomeClassname: "logos:yarn",
-  },
-];
-
+import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
+import Tilt from "react-parallax-tilt";
+import Myavtar from "../../Assets/avatar.svg";
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="home2">
-      <h1 className="h1">What I do</h1>
-      <Row className="details-section">
-        <Col md={4}>
-          <Fade left duration={2000}>
-            <LottieControl animationData={codinglottie} />
-          </Fade>
+      <Row>
+        <Col md={8} className="home-about-description">
+          <h1 className="h1">Who am I</h1>
+          <p className="home-about-body">
+            I am a senior <strong className="blue">React Native </strong>{" "}
+            developer with <strong className="blue">4.5+ years</strong> of
+            experience and <strong className="blue">1.5+ years </strong>of{" "}
+            <strong className="blue">React JS </strong>experience. I am
+            passionate about building high-quality web and mobile applications
+            that meet the needs of end-users and drive business success.
+            Throughout my career, I have honed my skills in developing custom UI
+            components, integrating third-party APIs, and optimizing app
+            performance and scalability.
+            <br />
+            <br /> My technical expertise includes proficiency in{" "}
+            <strong className="blue">
+              JavaScript, TypeScript, React Native, React JS, Redux,
+            </strong>{" "}
+            and related libraries and frameworks. I have also worked extensively
+            with various web and mobile development tools and technologies,
+            including{" "}
+            <strong className="blue">Xcode, Android Studio, and Expo.</strong>{" "}
+            In addition to my technical skills, I am a strong communicator and
+            collaborator who enjoys working closely with designers, product
+            managers, and other stakeholders to deliver high-quality products on
+            time and within budget. I am also comfortable working independently
+            and taking ownership of complex projects from start to finish.{" "}
+            <br />
+            <br />
+            Overall, I am a dedicated and experienced developer who is committed
+            to excellence in everything I do. I am excited about the opportunity
+            to leverage my skills and experience to help bring innovative web
+            and mobile apps to life and make a meaningful contribution to the
+            field of software development.
+          </p>
         </Col>
-        <Col md={4}>
-          <Fade right duration={2000}>
-            <Card style={{ width: "35rem", height: "25rem" }}>
-              <Card.Body>
-                <Card.Title style={{ textAlign: "center" }}>
-                  Framework Knowledge
-                </Card.Title>
-                <div className="d-flex justify-content-center flex-wrap mb-2">
-                  {softwareSkills.map((skill, i) => {
-                    return (
-                      <Fragment key={i}>
-                        <div className="icon-overlay">
-                          <OverlayTrigger
-                            placement="bottom"
-                            delay={{ show: 250, hide: 400 }}
-                            overlay={
-                              <Tooltip id="button-tooltip">
-                                {skill.skillName}
-                              </Tooltip>
-                            }
-                          >
-                            <Icon
-                              icon={skill.fontAwesomeClassname}
-                              data-inline="false"
-                              height={"2rem"}
-                              width={"2rem"}
-                              className="icon-size"
-                            ></Icon>
-                          </OverlayTrigger>
-                        </div>
-                      </Fragment>
-                    );
-                  })}
-                </div>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Fade>
-        </Col>
-      </Row>
-      <Row className="details-section2">
-        <Col md={4}>
-          <Fade left duration={2000}>
-            <LottieControl animationData={codinglottie1} />
-          </Fade>
-        </Col>
-        <Col md={4}>
-          <Fade right duration={2000}>
-            <Card style={{ width: "35rem", height: "25rem" }}>
-              <Card.Body>
-                <Card.Title style={{ textAlign: "center" }}>
-                  Cloud & DB Knowledge
-                </Card.Title>
-                <div className="d-flex justify-content-center flex-wrap mb-2">
-                  {softwareSkills.map((skill, i) => {
-                    return (
-                      <Fragment key={i}>
-                        <div className="icon-overlay">
-                          <OverlayTrigger
-                            placement="bottom"
-                            delay={{ show: 250, hide: 400 }}
-                            overlay={
-                              <Tooltip id="button-tooltip">
-                                {skill.skillName}
-                              </Tooltip>
-                            }
-                          >
-                            <Icon
-                              icon={skill.fontAwesomeClassname}
-                              data-inline="false"
-                              height={"2rem"}
-                              width={"2rem"}
-                              className="icon-size"
-                            ></Icon>
-                          </OverlayTrigger>
-                        </div>
-                      </Fragment>
-                    );
-                  })}
-                </div>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Fade>
+        <Col md={4} className="myAvtar">
+          <Tilt>
+            <img src={Myavtar} className="img-fluid" alt="avatar" />
+          </Tilt>
         </Col>
       </Row>
     </Container>

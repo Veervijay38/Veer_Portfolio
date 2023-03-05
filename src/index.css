@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(
+  /* background: linear-gradient(
     to left,
     rgb(22, 59, 154),
     rgb(18, 49, 133),
@@ -13,7 +13,18 @@ body {
     rgb(11, 25, 88),
     rgb(8, 13, 64),
     rgb(4, 0, 32)
+  ); */
+  background-image: linear-gradient(
+    210deg,
+    rgb(2, 0, 36) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(51, 213, 245) 100%
   );
+  /* background: linear-gradient(
+    181deg,
+    rgb(2, 0, 97) 15%,
+    rgb(97, 149, 219) 158.5%
+  ); */
 }
 
 code {
