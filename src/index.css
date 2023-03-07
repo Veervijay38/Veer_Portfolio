@@ -15,16 +15,24 @@ body {
     rgb(4, 0, 32)
   ); */
   background-image: linear-gradient(
-    210deg,
+    180deg,
     rgb(2, 0, 36) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgb(51, 213, 245) 100%
+    rgba(9, 9, 121, 1) 50%,
+    rgb(51, 174, 245) 100%
   );
-  /* background: linear-gradient(
-    181deg,
-    rgb(2, 0, 97) 15%,
-    rgb(97, 149, 219) 158.5%
-  ); */
+  /* background-image: linear-gradient(
+    135deg,
+    #002147 0%,
+    #1b4f72 50%,
+    #2c3e50 100%
+  );
+  background-image: linear-gradient(
+    135deg,
+    #24243e 0%,
+    #302b63 50%,
+    #0f0c29 100%
+  );
+  background-image: linear-gradient(135deg, #2e3192 0%, #1b1464 100%); */
 }
 
 code {

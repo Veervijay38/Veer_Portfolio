@@ -36,7 +36,7 @@ function NavbarComponent() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="NavCollapse">
           <Nav>
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/" exact>
               <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
             </Nav.Link>
             <Nav.Link as={Link} to="/about">

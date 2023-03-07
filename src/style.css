@@ -34,12 +34,12 @@
 .Typewriter__wrapper {
   font-family: "Gill Sans";
   font-size: 1.8rem !important;
-  color: rgb(51, 213, 245) !important;
+  color: rgb(255, 153, 0) !important;
 }
 
 .Typewriter__cursor {
   font-size: 1.8rem !important;
-  color: rgb(51, 213, 245) !important;
+  color: rgb(255, 153, 0) !important;
 }
 
 .wave {
@@ -52,6 +52,20 @@
 .lottie-style {
   margin-left: 8rem;
   /* margin-top: 6rem; */
+}
+
+@media only screen and (max-width: 768px) {
+  .home-row {
+    flex-direction: column;
+  }
+
+  .home-header {
+    padding-top: 3rem;
+  }
+
+  .lottie-style {
+    margin-left: 0rem;
+  }
 }
 @keyframes wave-animation {
   0% {
@@ -104,10 +118,9 @@
 }
 
 .blue {
-  color: rgb(2, 0, 36);
+  color: #ff9900;
   font-weight: bold;
-  text-decoration: underline;
-  
+  /* text-decoration: underline; */
 }
 .home-about-section {
   position: relative;
@@ -136,6 +149,27 @@
   padding-bottom: 2rem;
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  .home-about-body {
+    font-size: 1em !important;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-about-body {
+    font-size: 0.8em !important;
+    padding-top: 20px;
+  }
+  .h1 {
+    font-size: 1rem;
+  }
+}
+
 .subh1 {
   font-size: 1.2rem;
   font-family: "Gill Sans bold";
@@ -230,4 +264,52 @@
 
 .blockquote-footer {
   color: #a588c0 !important;
+}
+
+/* --------- */
+/*Resume   */
+/* --------- */
+
+.mt-4 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.card_one {
+  width: 25rem;
+}
+.drawer-icon {
+  font-size: 1.5em;
+  color: aliceblue;
+}
+.dropdown-toggle::before {
+  display: none;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+  align-self: center;
+}
+/* --------- */
+/* Project Page */
+/* --------- */
+
+.project-section {
+  display: flex;
+  margin-top: 8rem;
+  margin-bottom: 10.1rem;
+  justify-content: center;
+}
+
+.floating-nav-trigger {
+  position: fixed;
+  bottom: 20px; /* adjust as needed */
+  right: 20px; /* adjust as needed */
+  z-index: 999; /* make sure it's above other content */
+}
+
+.project-title {
+  text-align: center;
+  margin-bottom: 2rem;
 }

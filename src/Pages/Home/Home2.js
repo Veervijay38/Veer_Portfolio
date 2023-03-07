@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import Myavtar from "../../Assets/avatar.svg";
+
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="home2">
       <Row>
-        <Col md={8} className="home-about-description">
+        <Col lg={8} className="home-about-description">
           <h1 className="h1">Who am I</h1>
           <p className="home-about-body">
             I am a senior <strong className="blue">React Native </strong>{" "}
@@ -41,7 +42,7 @@ function Home2() {
             field of software development.
           </p>
         </Col>
-        <Col md={4} className="myAvtar">
+        <Col lg={4} className="myAvtar d-flex justify-content-center">
           <Tilt>
             <img src={Myavtar} className="img-fluid" alt="avatar" />
           </Tilt>

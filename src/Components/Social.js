@@ -62,7 +62,7 @@ const fabbuttonStyle = {
   },
 };
 
-function Social() {
+function Social({ CheckResume }) {
   return (
     <>
       <Box sx={{ "& > :not(style)": { m: 1 }, marginTop: 5 }}>
@@ -112,17 +112,19 @@ function Social() {
           <Twitter />
         </Fab>
       </Box>
-      <Box sx={{ "& > :not(style)": { m: 1 }, marginTop: 1 }}>
-        <Button
-          variant="contained"
-          sx={fabbuttonStyle}
-          href="/resume"
-          style={{ fontWeight: "bold" }}
-        >
-          <Article sx={{ mr: 1 }} />
-          Check My Resume
-        </Button>
-      </Box>
+      {CheckResume && (
+        <Box sx={{ "& > :not(style)": { m: 1 }, marginTop: 1 }}>
+          <Button
+            variant="contained"
+            sx={fabbuttonStyle}
+            href="/resume"
+            style={{ fontWeight: "bold" }}
+          >
+            <Article sx={{ mr: 1 }} />
+            Check My Resume
+          </Button>
+        </Box>
+      )}
     </>
   );
 }

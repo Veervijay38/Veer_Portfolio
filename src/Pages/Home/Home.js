@@ -26,7 +26,7 @@ function Home() {
             <div>
               <TypeWritercomponet />
             </div>
-            <Social />
+            <Social CheckResume={true} />
           </Col>
           <Col md={4} className="lottie-style">
             <LottieControl animationData={codinglottie} />
