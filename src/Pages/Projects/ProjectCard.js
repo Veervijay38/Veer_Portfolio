@@ -8,10 +8,12 @@ import {
 } from "@mui/material";
 
 const StyledCard = styled(Card)({
-//   maxWidth: 345,
+  //   maxWidth: 345,
   position: "relative",
   zIndex: 1,
   overflow: "hidden",
+  border: "1px solid #ccc",
+  boxShadow: "0px 0px 5px #fff",
   "&:hover": {
     transform: "scale(1.05)",
     border: "3px solid #ff9900",

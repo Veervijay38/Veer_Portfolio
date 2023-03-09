@@ -10,7 +10,7 @@ function Project() {
       <Row className="justify-content-center">
         <Col md={8} className="project-header">
           <h1 className="project-title" style={{ color: "aliceblue" }}>
-            My Projects Portfolio
+            Portfolio of My Projects
           </h1>
           <ProjectList />
         </Col>

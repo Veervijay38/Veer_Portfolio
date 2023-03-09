@@ -50,8 +50,7 @@
   display: inline-block;
 }
 .lottie-style {
-  margin-left: 8rem;
-  /* margin-top: 6rem; */
+  margin-left: 6rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -120,7 +119,6 @@
 .blue {
   color: #ff9900;
   font-weight: bold;
-  /* text-decoration: underline; */
 }
 .home-about-section {
   position: relative;
@@ -140,6 +138,7 @@
   text-align: left;
   padding-top: 50px;
   width: 50rem;
+  font-family: "Gill Sans";
 }
 .h1 {
   font-size: 1.5rem;
@@ -177,7 +176,10 @@
   text-align: center;
 }
 .details-section {
-  margin-top: 2rem;
+  align-self: center;
+  align-content: center;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
   justify-content: center;
 }
 
@@ -194,9 +196,56 @@
 .icon-size {
   margin: auto;
 }
-.details-section2 {
-  padding-top: 10rem;
+
+/* --------- */
+/* About Page */
+/* --------- */
+.about-section-2 {
+  position: relative;
   justify-content: center;
+  padding-bottom: 70px !important;
+  padding-top: 12rem !important;
+}
+
+.about-section {
+  display: flex;
+  margin-top: 8rem;
+  margin-bottom: 1.1rem;
+  justify-content: center;
+}
+.about-row {
+  justify-content: center;
+}
+.about-header {
+  margin-top: 2rem !important;
+  text-align: center;
+}
+
+.about_heading {
+  color: aliceblue;
+  font-size: 2rem !important;
+  font-family: "Gill Sans bold";
+}
+.about_heading-name {
+  text-align: left;
+  margin-top: 2rem !important;
+  color: aliceblue;
+  font-size: 1.2rem !important;
+  font-family: "Gill Sans bold";
+}
+
+.about_main-name {
+  font-family: "Gill Sans Extrabold";
+  color: #ff9900;
+  font-size: 1.2rem !important;
+}
+
+.about-activity {
+  text-align: left;
+  font-family: "Gill Sans Extrabold";
+  color: aliceblue;
+  font-size: 1.2rem !important;
+  list-style: none !important;
 }
 /* --------- */
 /*Scrollbar   */
@@ -274,9 +323,12 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.card_one {
+.main_card {
   width: 25rem;
+  text-align: center;
+  font-family: "Gill Sans Extrabold";
 }
+
 .drawer-icon {
   font-size: 1.5em;
   color: aliceblue;
@@ -290,6 +342,37 @@
 .rounded-circle {
   border-radius: 50% !important;
   align-self: center;
+  width: 200px;
+  height: 200px;
+}
+.title_text {
+  text-align: left;
+  font-family: "Gill Sans";
+}
+.role {
+  font-weight: bold;
+  font-family: "Gill Sans";
+}
+.company {
+  color: black;
+}
+.left-align {
+  text-align: left;
+  font-family: "Gill Sans";
+}
+.font-small {
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .card_one {
+    width: 10rem;
+  }
+  .rounded-circle {
+    border-radius: 50% !important;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+  }
 }
 /* --------- */
 /* Project Page */

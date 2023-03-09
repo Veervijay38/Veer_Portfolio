@@ -65,7 +65,7 @@ const fabbuttonStyle = {
 function Social({ CheckResume }) {
   return (
     <>
-      <Box sx={{ "& > :not(style)": { m: 1 }, marginTop: 5 }}>
+      <Box sx={{ "& > :not(style)": { m: 1 }, marginTop: CheckResume ? 5 : 0 }}>
         <Fab
           onClick={() => window.open(socialLinks.linkedin)}
           size="small"
