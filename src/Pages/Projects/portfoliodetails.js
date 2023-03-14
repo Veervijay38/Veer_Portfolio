@@ -15,7 +15,7 @@ export const webprojects = [
     features: ["Developed/Deployed from scratch"],
     toolsUsed: "React JS, react-router-dom, Material-UI",
     githublink: "https://github.com/Veervijay38/Veer_Portfolio",
-    livelink: "",
+    livelink: "https://veervijaysinh-rana.vercel.app/",
   },
   {
     title: "Gativan Website",

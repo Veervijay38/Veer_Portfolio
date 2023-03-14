@@ -12,7 +12,7 @@ import { BsBuildings, BsFillAwardFill } from "react-icons/bs";
 import { AiOutlineDownload } from "react-icons/ai";
 import { GiAutoRepair } from "react-icons/gi";
 import { IoSchool } from "react-icons/io5";
-import { CgPhone } from "react-icons/cg";
+import { CgPhone,CgWebsite } from "react-icons/cg";
 import Particle from "../../Components/Particle";
 // import { NavDropdown } from "react-bootstrap";
 import Social from "../../Components/Social";
@@ -44,6 +44,12 @@ function Resume() {
               </Card.Text>
               <Card.Text>
                 <CgPhone />: +1(289) 439-7949
+              </Card.Text>
+              <Card.Text>
+                <CgWebsite />:{" "}
+                <a href="https://veervijaysinh-rana.vercel.app/">
+                  https://veervijaysinh-rana.vercel.app/
+                </a>
               </Card.Text>
               <hr />
               <Social />
