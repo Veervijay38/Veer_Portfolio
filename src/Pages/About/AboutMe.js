@@ -14,24 +14,24 @@ import { Icon } from "@iconify/react";
 
 function AboutME() {
   return (
-    <Container fluid className="about-section-2" id="about2">
+    <Container fluid className="about-section-2" id="about-detail-section">
       <h1 className="h1">What I do</h1>
       {skillsSection.data.map((skill, i) => {
         return (
           <Row key={i} className="details-section">
-            <Col lg={4} style={{ alignSelf: "center" }}>
+            <Col md={4} style={{ alignSelf: "center" }}>
               <Fade bottom duration={2000}>
                 <LottieControl animationData={skill.lottieAnimationFile} />
               </Fade>
             </Col>
-            <Col lg={4}>
+            <Col md={4}>
               <Fade bottom duration={2000}>
                 <Card style={{ width: "35rem", height: "30rem" }}>
                   <Card.Body>
                     <Card.Title style={{ textAlign: "center" }}>
                       {skill.title}
                     </Card.Title>
-                    <div className="d-flex justify-content-center flex-wrap mb-2">
+                    <div className="card-div">
                       {skill.softwareSkills.map((softwareSkills, i) => {
                         return (
                           <Fragment key={i}>

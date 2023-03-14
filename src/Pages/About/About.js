@@ -4,14 +4,19 @@ import Particle from "../../Components/Particle";
 import AboutME from "./AboutMe";
 import Image from "../../Assets/Deskguy.png";
 import { GiBulletBill } from "react-icons/gi";
+import { FaChevronDown } from "react-icons/fa";
 
 function About() {
+  const scrollToSection = () => {
+    const section = document.getElementById("about-detail-section");
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section>
       <Container fluid className="about-section" id="about">
         <Particle />
         <Row className="about-row">
-          <Col lg={5} className="about-header">
+          <Col md={5} className="about-header">
             <h1 className="about_heading">Brief about Me </h1>
             <p className="about_heading-name">
               Hello, I'm
@@ -37,7 +42,7 @@ function About() {
               </li>
             </ul>
           </Col>
-          <Col lg={4} className="lottie-style">
+          <Col md={4} className="lottie-style">
             <img
               src={Image}
               alt=""
@@ -48,6 +53,13 @@ function About() {
             ></img>
           </Col>
         </Row>
+        <div className="bouncing-arrow-container">
+          <a href="#about-detail-section" className="bouncing-arrow" onClick={scrollToSection}>
+            <i className="fa fa-angle-down">
+              <FaChevronDown size={"1.5rem"} />
+            </i>
+          </a>
+        </div>
       </Container>
       <AboutME />
     </section>

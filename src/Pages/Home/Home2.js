@@ -5,14 +5,15 @@ import Myavtar from "../../Assets/avatar.svg";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="home2">
+    <Container fluid className="home-about-section" id="home-about-section">
       <Row>
         <Col lg={8} className="home-about-description">
           <h1 className="h1">Who am I</h1>
           <p className="home-about-body">
-            I am a senior <strong className="blue">React Native </strong>{" "}
-            developer with <strong className="blue">4.5+ years</strong> of
-            experience and <strong className="blue">1.5+ years </strong>of{" "}
+            I am a senior <strong className="blue">Software Developer </strong>{" "}
+            with <strong className="blue">4.9+ years</strong> of
+            <strong className="blue"> React Native</strong> experience and{" "}
+            <strong className="blue">1.5+ years </strong>of{" "}
             <strong className="blue">React JS </strong>experience. I am
             passionate about building high-quality web and mobile applications
             that meet the needs of end-users and drive business success.

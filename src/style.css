@@ -105,6 +105,55 @@
   padding-top: 9em !important;
   align-self: center;
 }
+.scrollDownText {
+  position: absolute;
+  text-align: center;
+  padding-top: 70vh;
+  font-family: "Nanum Pen Script", "cursive";
+  font-size: 23px;
+}
+
+.bouncing-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bouncing-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  animation: bounce 1s infinite ease-in-out;
+  cursor: pointer;
+}
+
+.bouncing-arrow i {
+  color: aliceblue;
+  font-size: 24px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
 
 @media (max-width: 767px) {
   .myAvtar {
@@ -123,12 +172,10 @@
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 10rem !important;
   padding-left: 5rem !important;
 }
 .home-about-description {
   color: white !important;
-  padding-top: 80px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -175,13 +222,6 @@
   color: aliceblue;
   text-align: center;
 }
-.details-section {
-  align-self: center;
-  align-content: center;
-  margin-top: 5rem;
-  margin-bottom: 6rem;
-  justify-content: center;
-}
 
 .icon-overlay {
   display: flex;
@@ -204,7 +244,6 @@
   position: relative;
   justify-content: center;
   padding-bottom: 70px !important;
-  padding-top: 12rem !important;
 }
 
 .about-section {
@@ -247,6 +286,47 @@
   font-size: 1.2rem !important;
   list-style: none !important;
 }
+.details-section {
+  align-self: center;
+  align-content: center;
+  margin-bottom: 6rem;
+  justify-content: center;
+}
+.card-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+@media (max-width: 768px) {
+  .about-section-2 {
+    padding-top: 20rem !important;
+    padding-bottom: 50px !important;
+  }
+  .about_heading {
+    font-size: 1rem !important;
+  }
+
+  .about_heading-name {
+    font-size: 0.7rem !important;
+  }
+
+  .about_main-name {
+    font-size: 0.7rem !important;
+  }
+
+  .about-activity {
+    font-size: 0.8rem !important;
+  }
+  .card {
+    width: 10%;
+    height: auto;
+  }
+  .card-body {
+    font-size: xx-small;
+  }
+}
+
 /* --------- */
 /*Scrollbar   */
 /* --------- */
@@ -324,11 +404,13 @@
   padding-bottom: 5rem;
 }
 .main_card {
-  width: 25rem;
+  width: 22rem;
   text-align: center;
   font-family: "Gill Sans Extrabold";
 }
-
+.dropdown {
+  list-style: none;
+}
 .drawer-icon {
   font-size: 1.5em;
   color: aliceblue;
@@ -342,8 +424,9 @@
 .rounded-circle {
   border-radius: 50% !important;
   align-self: center;
-  width: 200px;
-  height: 200px;
+  margin-top: 0.5rem;
+  width: 150px;
+  height: 150px;
 }
 .title_text {
   text-align: left;
@@ -363,6 +446,28 @@
 .font-small {
   font-size: 1rem;
 }
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.clear-margin {
+  margin: 0;
+}
+.label-keyword {
+  display: inline-block;
+  font-family: "Gill Sans";
+  margin-top: 0.5rem;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+  height: 2rem;
+  font-weight: 600;
+  border-radius: 0.25em;
+  margin-left: 0.5rem;
+}
+
 @media (max-width: 767px) {
   .card_one {
     width: 10rem;
@@ -394,5 +499,11 @@
 
 .project-title {
   text-align: center;
+  margin-top: 3rem;
+}
+
+.project-title1 {
+  text-align: center;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }

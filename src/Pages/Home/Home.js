@@ -6,8 +6,13 @@ import Home2 from "./Home2";
 import TypeWritercomponet from "../../Components/TypeWriter";
 import Particle from "../../Components/Particle";
 import Social from "../../Components/Social";
+import { FaChevronDown } from "react-icons/fa";
 
 function Home() {
+  const scrollToSection = () => {
+    const section = document.getElementById("home-about-section");
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -32,6 +37,17 @@ function Home() {
             <LottieControl animationData={codinglottie} />
           </Col>
         </Row>
+        <div className="bouncing-arrow-container">
+          <a
+            href="#home-about-section"
+            className="bouncing-arrow"
+            onClick={scrollToSection}
+          >
+            <i className="fa fa-angle-down">
+              <FaChevronDown size={"1.5rem"} />
+            </i>
+          </a>
+        </div>
       </Container>
       <Home2 />
     </section>

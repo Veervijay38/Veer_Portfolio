@@ -1,27 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 import {
   FaMapMarkerAlt,
   FaEnvelope,
-  FaTimes,
-  FaBars,
+  // FaTimes,
+  // FaBars,
   FaRegAddressCard,
+  FaHeart,
 } from "react-icons/fa";
-import { BsBuildings } from "react-icons/bs";
+import { BsBuildings, BsFillAwardFill } from "react-icons/bs";
 import { AiOutlineDownload } from "react-icons/ai";
+import { GiAutoRepair } from "react-icons/gi";
+import { IoSchool } from "react-icons/io5";
 import { CgPhone } from "react-icons/cg";
 import Particle from "../../Components/Particle";
-import { NavDropdown } from "react-bootstrap";
+// import { NavDropdown } from "react-bootstrap";
 import Social from "../../Components/Social";
 import MyResume from "../../Assets/Veervijaysinh_Rana_Resume.pdf";
 import ProfilePic from "../../Assets/ProfilePic.jpeg";
 
 function Resume() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const handleToggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <Container className="mt-4">
       <Particle />
@@ -49,7 +52,7 @@ function Resume() {
               </Button>
             </Card.Body>
           </Card>
-          <div className="floating-nav-trigger">
+          {/* <div className="floating-nav-trigger">
             <NavDropdown
               title={
                 isOpen ? (
@@ -63,19 +66,16 @@ function Resume() {
               pullRight={true}
               show={isOpen}
               noCaret={true}
+              className="dropdown"
             >
-              <NavDropdown.Item href="#action/1.1">About</NavDropdown.Item>
+              <NavDropdown.Item href="#action/1.5">About</NavDropdown.Item>
               <NavDropdown.Item href="#action/1.2">
                 Wrok Experience
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/1.3">
-                Something else
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/1.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/1.3">Skills</NavDropdown.Item>
+              <NavDropdown.Item href="#action/1.4">Education</NavDropdown.Item>
             </NavDropdown>
-          </div>
+          </div> */}
         </Col>
         <Col xs={12} sm={8} className="scrollable-card">
           <Card className="text-center">
@@ -278,6 +278,128 @@ function Resume() {
                       </a>
                     </li>
                   </ul>
+                </Card.Text>
+              </Card.Body>
+              <Card.Body>
+                <Card.Title
+                  id="#action/1.3"
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "Gill Sans",
+                  }}
+                >
+                  <GiAutoRepair /> Skills
+                </Card.Title>
+                <hr />
+                <Card.Body style={{ textAlign: "left" }}>
+                  <ul className="list-unstyled clear-margin">
+                    <li>
+                      <storng className="role">Frontend</storng>
+                      <div>
+                        <span className="label-keyword">
+                          <p>React Native / Android / IOS</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>React Js</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>HTML / JSX</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>Javascript / Typescript</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>Redux / Apollo</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>SCSS / CSS / BEM / Styled Component</p>
+                        </span>
+                      </div>
+                      <hr />
+                      <storng className="role">Devops</storng>
+                      <div>
+                        <span className="label-keyword">
+                          <p>AWS</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>G Cloud</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>Azure</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>MongoDB</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>Caching</p>
+                        </span>
+                        <span className="label-keyword">
+                          <p>Heroku</p>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </Card.Body>
+              </Card.Body>
+              <Card.Body>
+                <Card.Title
+                  id="#action/1.4"
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "Gill Sans",
+                  }}
+                >
+                  <IoSchool /> Education
+                </Card.Title>
+                <hr />
+                <Card.Text style={{ textAlign: "left" }}>
+                  <storng className="role">
+                    Bachelor of Engineering | May 2016
+                  </storng>
+                  <br />
+                  <code className="company">
+                    Gujarat Technological University, Ahmedbabd,Gujarat
+                  </code>
+                </Card.Text>
+              </Card.Body>
+              <Card.Body>
+                <Card.Title
+                  id="#action/1.5"
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "Gill Sans",
+                  }}
+                >
+                  <BsFillAwardFill /> Awards
+                </Card.Title>
+                <hr />
+                <Card.Text style={{ textAlign: "left" }}>
+                  <storng className="role">Rising Star of the Year</storng>
+                  <br />
+                  <code className="company">Kalyani Studio (2020)</code>
+                </Card.Text>
+              </Card.Body>
+              <Card.Body>
+                <Card.Title
+                  id="#action/1.6"
+                  style={{
+                    textAlign: "left",
+                    fontFamily: "Gill Sans",
+                  }}
+                >
+                  <FaHeart /> Interests
+                </Card.Title>
+                <hr />
+                <Card.Text style={{ textAlign: "left" }}>
+                  <code className="company">Gaming</code>
+                  <br />
+                  <code className="company">Football</code>
+                  <br />
+                  <code className="company">Cricket</code>
+                  <br />
+                  <code className="company">Tennis</code>
+                  <br />
+                  <code className="company">Music</code>
                 </Card.Text>
               </Card.Body>
             </Card.Body>

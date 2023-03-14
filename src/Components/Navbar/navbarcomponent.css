@@ -30,6 +30,7 @@
 
 .navbar-nav .nav-link {
   position: relative;
+  color: aliceblue;
 }
 
 .navbar-nav .nav-link:before {
@@ -43,7 +44,7 @@
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
-} 
+}
 
 .navbar-nav .nav-link:hover:before {
   visibility: visible;
@@ -58,4 +59,71 @@
   bottom: 0;
   left: 0;
   background-color: #ff9900;
+}
+
+@media screen and (max-width: 768px) {
+  .NavTitle {
+    font-family: Augestina;
+    font-size: 1rem !important;
+    text-transform: capitalize;
+  }
+  .NavCollapse {
+    justify-content: flex-end;
+    background-color: aliceblue;
+    color: black;
+
+  }
+
+  .sticky {
+    background-color: rgba(2, 0, 36, 1) !important;
+    transition: all 0.3s ease-out 0s !important;
+    box-shadow: 0px 10px 10px 0px rgb(9, 8, 52) !important;
+    backdrop-filter: blur(15px) !important;
+  }
+
+  .navbar {
+    position: fixed !important;
+    transition: all 0.3s ease-out 0s !important;
+    padding: 0.3rem 2rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  .navbar-nav .nav-link {
+    position: relative;
+    color: black;
+  }
+
+  .navbar-nav .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff9900;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+    color: black;
+
+  }
+
+  .navbar-nav .nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    color: black;
+
+  }
+
+  .navbar-nav .nav-link.active::before {
+    visibility: visible;
+    transform: scaleX(1);
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff9900;
+    color: black;
+
+  }
 }
