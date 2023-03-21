@@ -43,7 +43,7 @@ function Home2() {
             field of software development.
           </p>
         </Col>
-        <Col lg={4} className="myAvtar d-flex justify-content-center">
+        <Col lg={4} className="myAvtar">
           <Tilt>
             <img src={Myavtar} className="img-fluid" alt="avatar" />
           </Tilt>

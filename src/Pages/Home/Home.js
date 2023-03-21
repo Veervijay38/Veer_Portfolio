@@ -28,7 +28,7 @@ function Home() {
             <h1 className="heading-name">
               My name is <code className="main-name"> Veervijaysinh Rana</code>
             </h1>
-            <div>
+            <div >
               <TypeWritercomponet />
             </div>
             <Social CheckResume={true} />

@@ -28,7 +28,7 @@ function Resume() {
   return (
     <Container className="mt-4">
       <Particle />
-      <Row className="justify-content-center">
+      <Row >
         <Col xs={12} sm={4}>
           <Card className="main_card position-fixed">
             <Image src={ProfilePic} fluid className="rounded-circle" />
@@ -83,7 +83,7 @@ function Resume() {
             </NavDropdown>
           </div> */}
         </Col>
-        <Col xs={12} sm={8} className="scrollable-card">
+        <Col xs={12} sm={8} className="second-card">
           <Card className="text-center">
             <Card.Body>
               <Card.Title className="title_text">BACKGROUND</Card.Title>

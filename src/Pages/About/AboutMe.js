@@ -15,7 +15,7 @@ import { Icon } from "@iconify/react";
 function AboutME() {
   return (
     <Container fluid className="about-section-2" id="about-detail-section">
-      <h1 className="h1">What I do</h1>
+      <h1 className="header-tag">What I do</h1>
       {skillsSection.data.map((skill, i) => {
         return (
           <Row key={i} className="details-section">
@@ -26,7 +26,7 @@ function AboutME() {
             </Col>
             <Col md={4}>
               <Fade bottom duration={2000}>
-                <Card style={{ width: "35rem", height: "30rem" }}>
+                <Card className="card-size">
                   <Card.Body>
                     <Card.Title style={{ textAlign: "center" }}>
                       {skill.title}
@@ -48,8 +48,6 @@ function AboutME() {
                                 <Icon
                                   icon={softwareSkills.fontAwesomeClassname}
                                   data-inline="false"
-                                  height={"2rem"}
-                                  width={"2rem"}
                                   className="icon-size"
                                 ></Icon>
                               </OverlayTrigger>

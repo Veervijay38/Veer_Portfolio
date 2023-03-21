@@ -42,19 +42,16 @@ function About() {
               </li>
             </ul>
           </Col>
-          <Col md={4} className="lottie-style">
-            <img
-              src={Image}
-              alt=""
-              style={{
-                height: 400,
-                width: 400,
-              }}
-            ></img>
+          <Col md={4}>
+            <img src={Image} alt="imageabout" className="about-image"></img>
           </Col>
         </Row>
         <div className="bouncing-arrow-container">
-          <a href="#about-detail-section" className="bouncing-arrow" onClick={scrollToSection}>
+          <a
+            href="#about-detail-section"
+            className="bouncing-arrow"
+            onClick={scrollToSection}
+          >
             <i className="fa fa-angle-down">
               <FaChevronDown size={"1.5rem"} />
             </i>

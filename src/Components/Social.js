@@ -9,6 +9,7 @@ import Instagram from "@mui/icons-material/Instagram";
 import Article from "@mui/icons-material/Article";
 import Button from "@mui/material/Button";
 import { blue, pink, grey } from "@mui/material/colors";
+import "./Social.css";
 
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/veervijaysinhrana/",
@@ -66,6 +67,7 @@ function Social({ CheckResume }) {
   return (
     <>
       <Box
+        className="social-links"
         sx={{ "& > :not(style)": { m: 1 }, marginTop: CheckResume ? 5 : -1 }}
       >
         <Fab
