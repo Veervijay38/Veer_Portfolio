@@ -9,6 +9,7 @@ import Instagram from "@mui/icons-material/Instagram";
 import Article from "@mui/icons-material/Article";
 import Button from "@mui/material/Button";
 import { blue, pink, grey } from "@mui/material/colors";
+// import useMediaQuery from "@mui/material/useMediaQuery";
 import "./Social.css";
 
 export const socialLinks = {
@@ -64,6 +65,7 @@ const fabbuttonStyle = {
 };
 
 function Social({ CheckResume }) {
+  // const isSmallScreen = useMediaQuery("(max-width: 768px)");
   return (
     <>
       <Box

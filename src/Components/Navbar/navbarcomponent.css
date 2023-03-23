@@ -5,6 +5,9 @@
   font-family: Augestina;
   src: url("../fonts/Agustina.otf");
 }
+
+
+
 .NavTitle {
   font-family: Augestina;
   font-size: 1.8em !important;
@@ -69,9 +72,7 @@
   }
   .NavCollapse {
     justify-content: flex-end;
-    background-color: aliceblue;
-    color: black;
-
+    color: aliceblue;
   }
 
   .sticky {
@@ -82,7 +83,9 @@
   }
 
   .navbar {
+    background-color: rgba(2, 0, 36, 1) !important;
     position: fixed !important;
+    box-shadow: 0px 10px 10px 0px rgb(9, 8, 52) !important;
     transition: all 0.3s ease-out 0s !important;
     padding: 0.3rem 2rem !important;
     font-size: 1.3rem !important;
@@ -90,7 +93,7 @@
 
   .navbar-nav .nav-link {
     position: relative;
-    color: black;
+    color: aliceblue;
   }
 
   .navbar-nav .nav-link:before {
@@ -105,14 +108,12 @@
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
     color: black;
-
   }
 
   .navbar-nav .nav-link:hover:before {
     visibility: visible;
     transform: scaleX(1);
     color: black;
-
   }
 
   .navbar-nav .nav-link.active::before {
@@ -124,6 +125,5 @@
     left: 0;
     background-color: #ff9900;
     color: black;
-
   }
 }

@@ -12,7 +12,7 @@ import { BsBuildings, BsFillAwardFill } from "react-icons/bs";
 import { AiOutlineDownload } from "react-icons/ai";
 import { GiAutoRepair } from "react-icons/gi";
 import { IoSchool } from "react-icons/io5";
-import { CgPhone,CgWebsite } from "react-icons/cg";
+import { CgPhone, CgWebsite } from "react-icons/cg";
 import Particle from "../../Components/Particle";
 // import { NavDropdown } from "react-bootstrap";
 import Social from "../../Components/Social";
@@ -28,7 +28,7 @@ function Resume() {
   return (
     <Container className="mt-4">
       <Particle />
-      <Row >
+      <Row>
         <Col xs={12} sm={4}>
           <Card className="main_card position-fixed">
             <Image src={ProfilePic} fluid className="rounded-circle" />
@@ -83,8 +83,8 @@ function Resume() {
             </NavDropdown>
           </div> */}
         </Col>
-        <Col xs={12} sm={8} className="second-card">
-          <Card className="text-center">
+        <Col xs={12} sm={8}>
+          <Card className="second-card">
             <Card.Body>
               <Card.Title className="title_text">BACKGROUND</Card.Title>
               <hr />

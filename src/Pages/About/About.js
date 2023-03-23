@@ -42,7 +42,7 @@ function About() {
               </li>
             </ul>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="about-img-col">
             <img src={Image} alt="imageabout" className="about-image"></img>
           </Col>
         </Row>

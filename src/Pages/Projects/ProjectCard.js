@@ -27,7 +27,7 @@ const StyledCard = styled(Card)({
     border: "3px solid #ff9900",
     boxShadow: "0 8px 16px -8px rgba(0, 0, 0, 0.4)",
   },
-  backgroundColor: "transparent",
+  backgroundColor: "rgb(240, 248, 255)",
   marginBottom: 50,
 });
 
@@ -90,7 +90,7 @@ const ProjectCard = ({
       </Dialog>
       <CardContent>
         <Typography
-          color={"aliceblue"}
+          color={"rgba(2, 0, 36, 1)"}
           gutterBottom
           variant="h5"
           component="div"
@@ -98,14 +98,14 @@ const ProjectCard = ({
         >
           {title}
         </Typography>
-        <Typography variant="body2" color="aliceblue" fontFamily={"Gill Sans"}>
+        <Typography variant="body2" color="rgba(2, 0, 36, 1)" fontFamily={"Gill Sans"}>
           {description}
         </Typography>
         <br />
         <br />
         {features && (
           <Typography
-            color={"aliceblue"}
+            color={"rgba(2, 0, 36, 1)"}
             variant="caption"
             fontFamily={"Gill Sans"}
             fontSize={"1rem"}
@@ -117,7 +117,8 @@ const ProjectCard = ({
                   color={"#ff9900"}
                   variant="caption"
                   fontFamily={"Gill Sans"}
-                  fontSize={"1rem"}
+                  fontWeight={"bold"}
+                  fontSize={"0.9rem"}
                 >
                   {" "}
                   <li>{item} </li>
@@ -128,7 +129,7 @@ const ProjectCard = ({
         )}
         <br />
         <Typography
-          color={"aliceblue"}
+          color={"rgba(2, 0, 36, 1)"}
           variant="caption"
           fontFamily={"Gill Sans"}
           fontSize={"1rem"}
