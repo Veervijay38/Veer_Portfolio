@@ -1,5 +1,7 @@
 import protfolioapp from "../../Assets/Portfolio.png";
 import gativanweb from "../../Assets/gativanweb.png";
+import portfolio2 from "../../Assets/Portfolio2.0.png";
+import mernstack from "../../Assets/DashboardSS.png";
 import nexusone from "../../Assets/NexusONE.png";
 import gativan from "../../Assets/Gativan.png";
 import appscot from "../../Assets/AppScot.png";
@@ -8,7 +10,38 @@ import hpsak from "../../Assets/HP.png";
 
 export const webprojects = [
   {
-    title: "Protfolio Webapp",
+    title: "MERN Stack Dashboard",
+    description:
+      "The front-end of the dashboard is built using React.js and provides a responsive and dynamic user interface. The back-end is built using Node.js and Express, which provides a robust and scalable API for data management. The data is stored in MongoDB, a flexible and powerful NoSQL database, which provides efficient and fast data retrieval.",
+    image: mernstack,
+    features: [
+      "Multi-page Layout Featuring Sidebar Navigation",
+      "Establishing a Proprietary Database and Backend Server Configuration",
+      "Mongodb setup & Database creation",
+      "Ensuring responsiveness across various devices and screen sizes",
+      "Switching between Dark and Light Modes",
+      "Developed/Deployed from scratch",
+    ],
+    toolsUsed:
+      "MongoDB, Express, React JS, Node Js, Material-UI, Redux Toolkit",
+    githublink: "https://github.com/Veervijay38/FullStack_admin",
+    livelink: "https://veer-mern-admin.onrender.com/",
+  },
+  {
+    title: "VR",
+    description:
+      "This project showcases my skills in web development and design by creating a simple and elegant single-page portfolio website. The website features a clean and modern design, with a responsive layout that adapts to various screen sizes. The website includes a brief introduction, my skills and expertise, my work experience, and my educational background.",
+    image: portfolio2,
+    features: [
+      "Developed/Deployed from scratch",
+      "Website with different Color gradient",
+    ],
+    toolsUsed: "React JS, Tailwind , Material-UI",
+    githublink: "https://github.com/Veervijay38/Portfolio_2.0",
+    livelink: "https://veervijaysinh-rana-portfolio.vercel.app/",
+  },
+  {
+    title: "Portfolio Webapp",
     description:
       "Software Developer Portfolio built with react.js bootstrap that helps you showcase your work and skills as a software developer.",
     image: protfolioapp,

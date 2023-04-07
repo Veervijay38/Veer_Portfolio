@@ -16,7 +16,7 @@ import { blue, green } from "@mui/material/colors";
 import { FaGooglePlay } from "react-icons/fa";
 
 const StyledCard = styled(Card)({
-  //   maxWidth: 345,
+  maxWidth: 345,
   position: "relative",
   zIndex: 1,
   overflow: "hidden",
@@ -98,16 +98,20 @@ const ProjectCard = ({
         >
           {title}
         </Typography>
-        <Typography variant="body2" color="rgba(2, 0, 36, 1)" fontFamily={"Gill Sans"}>
+        <Typography
+          variant="body2"
+          color="rgba(2, 0, 36, 1)"
+          fontFamily={"Gill Sans"}
+        >
           {description}
         </Typography>
-        <br />
-        <br />
+        {/* <br />
+        <br /> */}
         {features && (
           <Typography
             color={"rgba(2, 0, 36, 1)"}
             variant="caption"
-            fontFamily={"Gill Sans"}
+            fontFamily={"Gill Sans bold"}
             fontSize={"1rem"}
           >
             My Work:{" "}
@@ -127,7 +131,7 @@ const ProjectCard = ({
             })}
           </Typography>
         )}
-        <br />
+        {/* <br /> */}
         <Typography
           color={"rgba(2, 0, 36, 1)"}
           variant="caption"
@@ -153,42 +157,44 @@ const ProjectCard = ({
             </Button>
           </Box>
         )}
-        {githublink && (
-          <Box
-            sx={{
-              "& > :not(style)": { m: 1 },
-              marginTop: 1,
-            }}
-          >
-            <Button
-              variant="contained"
-              sx={fabcodebuttonStyle}
-              onClick={() => window.open(githublink)}
-              style={{ fontWeight: "bold" }}
+        <div className="d-flex">
+          {githublink && (
+            <Box
+              sx={{
+                "& > :not(style)": { m: 1 },
+                marginTop: 1,
+              }}
             >
-              <GitHub sx={{ mr: 1 }} />
-              Code
-            </Button>
-          </Box>
-        )}
-        {livelink && (
-          <Box
-            sx={{
-              "& > :not(style)": { m: 1 },
-              marginTop: 1,
-            }}
-          >
-            <Button
-              variant="contained"
-              sx={fablivebuttonStyle}
-              onClick={() => window.open(livelink)}
-              style={{ fontWeight: "bold" }}
+              <Button
+                variant="contained"
+                sx={fabcodebuttonStyle}
+                onClick={() => window.open(githublink)}
+                style={{ fontWeight: "bold" }}
+              >
+                <GitHub sx={{ mr: 1 }} />
+                Code
+              </Button>
+            </Box>
+          )}
+          {livelink && (
+            <Box
+              sx={{
+                "& > :not(style)": { m: 1 },
+                marginTop: 1,
+              }}
             >
-              <OpenInNewIcon sx={{ mr: 1 }} />
-              Live
-            </Button>
-          </Box>
-        )}
+              <Button
+                variant="contained"
+                sx={fablivebuttonStyle}
+                onClick={() => window.open(livelink)}
+                style={{ fontWeight: "bold" }}
+              >
+                <OpenInNewIcon sx={{ mr: 1 }} />
+                Live
+              </Button>
+            </Box>
+          )}
+        </div>
       </CardContent>
     </StyledCard>
   );
